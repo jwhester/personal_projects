@@ -1,14 +1,19 @@
-function intro(){
+function onOff(){
     if(document.getElementById("tvScreen").className === 'tvScreen') {
-        document.getElementById("tvScreen").className = 'intro';
+        document.getElementById("tvScreen").className = 'onOff';
     } else {
         document.getElementById("tvScreen").className = 'tvScreen';
     }
 }
 function twilight() {
-    if(document.getElementById("tvScreen").className === 'tvScreen') {
-        document.getElementById("tvScreen").className = 'twilightZone';
+    document.getElementById("tvScreen").className = 'twilightZone';
+}
+
+function contactMe() {
+    var x = document.getElementById("contact");
+    if (x.style.display === 'none') {
+        x.style.display = "block";
     } else {
-        document.getElementById("tvScreen").className = 'tvScreen';
+        x.style.display = "none";
     }
 }

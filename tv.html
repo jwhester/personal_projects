@@ -3,27 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap</title>
+    <title>J.W. Hester</title>
     <link rel="stylesheet" href="css/tv.css">
     <script src="js/tv.js"></script>
 </head>
 <body>
+<div class="wall"></div>
+<div class="floor"></div>
     <div id="livingRoom">
 <!--        Navbar: Remote for T.V.-->
             <div id="remote">
-                <button id="button1" class="button" onclick="intro()">1</button>
-                <button id="button2" class="button" onclick="twilight()">2</button>
-                <button id="button3" class="button"></button>
-                <button id="button4" class="button"></button>
-                <button id="button5" class="button"></button>
-                <button id="button6" class="button"></button>
-                <button id="button7" class="button"></button>
-                <button id="button8" class="button"></button>
+                <button id="button1" class="button" onclick="onOff()">On-Off</button>
+                <button id="button2" class="button" onclick="twilight()">1</button>
+                <button id="button3" class="button">2</button>
+                <button id="button4" class="button">3</button>
+                <button id="button5" class="button">4</button>
+                <button id="button6" class="button">5</button>
+                <button id="button7" class="button">6</button>
+                <button id="button8" class="button" onclick="contactMe()">7</button>
             </div>
 <!--        Content area: Television-->
             <div id="television">
                 <div id="tvScreen" class="tvScreen">
-
+                    <div id="contact">
+                        <ul>
+                            <li>
+                                <p>J.W. Hester</p>
+                            </li>
+                            <li>
+                                <a href="#">Resume</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
     </div>
