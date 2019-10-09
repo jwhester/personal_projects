@@ -5,38 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>J.W. Hester</title>
     <link rel="stylesheet" href="css/tv.css">
-    <script src="js/tv.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="wall"></div>
-<div class="floor"></div>
+<!--<div class="wall"></div>-->
+<!--<div class="floor"></div>-->
     <div id="livingRoom">
-<!--        Navbar: Remote for T.V.-->
-            <div id="remote">
-                <button id="button1" class="button" onclick="onOff()">On-Off</button>
-                <button id="button2" class="button" onclick="twilight()">1</button>
-                <button id="button3" class="button">2</button>
-                <button id="button4" class="button">3</button>
-                <button id="button5" class="button">4</button>
-                <button id="button6" class="button">5</button>
-                <button id="button7" class="button">6</button>
-                <button id="button8" class="button" onclick="contactMe()">7</button>
-            </div>
+<!--    Navbar: Remote for T.V.-->
+        <div id="remote">
+            <button id="button1" class="button" onclick="onOff()">On-Off</button>
+            <button id="button2" class="button" onclick="twilight()">1</button>
+            <button id="button3" class="button">2</button>
+            <button id="button4" class="button">3</button>
+            <button id="button5" class="button">4</button>
+            <button id="button6" class="button">5</button>
+            <button id="button7" class="button">6</button>
+            <button id="button8" class="button" onclick="contactMe()">7</button>
+        </div>
+        <div id="flipbook">
+            <div class="guideCover"><p>#developer</p></div>
+            <div class="guide">p1</div>
+            <div class="guide">p2</div>
+            <div class="guide">p3</div>
+            <div class="guide">p4</div>
+            <div class="guide">p5</div>
+            <div class="guide">p6</div>
+            <div class="guide">p7</div>
+            <div class="guide">p8</div>
+        </div>
+
 <!--        Content area: Television-->
             <div id="television">
                 <div id="tvScreen" class="tvScreen">
+<!--                    Intro video-->
+                    <div id="intro">
+
+                    </div>
+
+<!--                    School commercial-->
+                    <div id="school">
+
+                    </div>
+
+<!--                    Work experience interview-->
+                    <div id="exp">
+
+                    </div>
+
+<!--                    Skills-->
+                    <div id="skills">
+
+                    </div>
+
+<!--                        Projects-->
+                    <div id="projects">
+
+                    </div>
+
+<!--                    Passions-->
+                    <div id="passions">
+
+                    </div>
+
+<!--                    contact me screen-->
                     <div id="contact">
                         <ul>
                             <li>
                                 <p>J.W. Hester</p>
                             </li>
                             <li>
+                                <a href="#">Email</a>
+                            </li>
+                            <li>
                                 <a href="#">Resume</a>
+                            </li>
+                            <li>
+                                <a href="#">Linkedin</a>
+                            </li>
+                            <li>
+                                <a href="#">Github</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
     </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/turn.js"></script>
+<script src="js/tv.js"></script>
 </body>
 </html>
