@@ -8,43 +8,22 @@
     <link rel="stylesheet" href="css/gardenWorld.css">
     <link href="https://fonts.googleapis.com/css?family=Ewert&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4db56fe07d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
 <body>
-    <div id="livingRoom">
-<!--    Navbar: Remote for T.V.-->
-        <div id="remote">
-            <button id="button1" class="button" onclick="onOff()">On-Off</button>
-            <button id="button2" class="button" onclick="twilight()">1</button>
-            <button id="button3" class="button">2</button>
-            <button id="button4" class="button">3</button>
-            <button id="button5" class="button">4</button>
-            <button id="button6" class="button">5</button>
-            <button id="button7" class="button">6</button>
-            <button id="button8" class="button" onclick="contactMe()">7</button>
-        </div>
-        <div id="flipbook">
-            <div class="guideCover"><p>#developer</p></div>
-            <div class="guide">p1</div>
-            <div class="guide">p2</div>
-            <div class="guide">p3</div>
-            <div class="guide">p4</div>
-            <div class="guide">p5</div>
-            <div class="guide">p6</div>
-            <div class="guide">p7</div>
-            <div class="guide">p8</div>
-        </div>
+<!----------------------Garden World---------------------------------------------------------->
+<div id="gardenWorld">
+    <div id="gardenWorldTV">
+        <img id="tv" src="img/gardenWorldTV.png">
     </div>
-    <div id="gardenWorld">
-        <div id="gardenWorldTV">
-            <img id="tv" src="img/gardenWorldTV.png">
-        </div>
-        <div class="container-sun">
-            <svg class="svg-sun" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="xMinYMin meet">
-                <circle cx="50" cy="50" r="35" id="sun"></circle>
-            </svg>
-        </div>
-        <div id="cloud-background-wrap">
+    <div class="container-sun">
+        <svg class="svg-sun" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="xMinYMin meet">
+            <circle cx="50" cy="50" r="35" id="sun"></circle>
+        </svg>
+    </div>
+    <div id="cloud-container">
+        <div id="cloud-background-wrap1">
             <div class="x1">
-            <img src="img/cloud%204.png" class="cloud">
+                <img src="img/cloud.png" class="cloud">
             </div>
         </div>
         <div id="cloud-background-wrap2">
@@ -52,6 +31,18 @@
                 <img src="img/cloud%204.png" class="cloud">
             </div>
         </div>
+        <div id="cloud-background-wrap3">
+            <div class="x3">
+                <img src="img/cloud%204.png">
+            </div>
+        </div>
+        <div id="cloud-background-wrap4">
+            <div class="x4">
+                <img src="img/cloud1.png">
+            </div>
+        </div>
+    </div>
+    <div id="flowers">
         <div id="position" class="sunflower">
             <div class="petals"></div>
             <div class="trunk">
@@ -59,32 +50,56 @@
                 <div class="right-branch"></div>
             </div>
         </div>
-            <div id="position1" class="sunflower1">
-                <div class="petals1"></div>
-                <div class="trunk1">
-                    <div class="left-branch1"></div>
-                    <div class="right-branch1"></div>
-                </div>
+        <div id="position1" class="sunflower1">
+            <div class="petals1"></div>
+            <div class="trunk1">
+                <div class="left-branch"></div>
+                <div class="right-branch"></div>
             </div>
+        </div>
         <div id="position2" class="sunflower2">
             <div class="petals2"></div>
             <div class="trunk2">
-                <div class="left-branch2"></div>
-                <div class="right-branch2"></div>
+                <div class="left-branch"></div>
+                <div class="right-branch"></div>
             </div>
         </div>
         <div id="position3" class="sunflower3">
             <div class="petals3"></div>
             <div class="trunk3">
-                <div class="left-branch3"></div>
-                <div class="right-branch3"></div>
+                <div class="left-branch"></div>
+                <div class="right-branch"></div>
             </div>
         </div>
-        <div id="sign">
-            <h2><i class="fas fa-seedling"></i>Garden of Knowledge</h2>
-        </div>
     </div>
-
+    <div id="sign">
+        <h2><i class="fas fa-seedling"></i>Garden of Knowledge</h2>
+    </div>
+</div>
+<div id="livingRoom">
+    <!--    Navbar: Remote for T.V.-->
+    <div id="remote">
+        <button id="button1" class="button" onclick="onOff()">On-Off</button>
+        <button id="button2" class="button" onclick="twilight()">1</button>
+        <button id="button3" class="button">2</button>
+        <button id="button4" class="button">3</button>
+        <button id="button5" class="button">4</button>
+        <button id="button6" class="button">5</button>
+        <button id="button7" class="button">6</button>
+        <button id="button8" class="button" onclick="contactMe()">7</button>
+    </div>
+    <div id="flipbook">
+        <div class="guideCover"><p>#developer</p></div>
+        <div class="guide">p1</div>
+        <div class="guide">p2</div>
+        <div class="guide">p3</div>
+        <div class="guide">p4</div>
+        <div class="guide">p5</div>
+        <div class="guide">p6</div>
+        <div class="guide">p7</div>
+        <div class="guide">p8</div>
+    </div>
+</div>
 <!--        Content area: Television-->
 <!--    <div id="world">-->
 <!--        <div id="tvScreen" class="tvScreen">-->
