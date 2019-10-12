@@ -5,27 +5,36 @@
         background-color: black;
         display: grid;
         height: 100vh;
-        grid-template-rows: 70vh 30vw;
+        grid-template-rows: 80vh 20vw;
         grid-template-columns: 100%;
         overflow-x: hidden;
+        margin: 0;
+        padding: 0;
     }
 
     /*--------------------------Navigation Area--------------------------------------------------------*/
-    #livingRoom {
-        grid-area: 2 / 1 / 3 / 2;
-        height: 40vh;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 100%;
+
+
+    /*T.V. Guide*/
+    #tvGuide {
+        display: none;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 615px;
+        width: 1200px;
+        z-index: 49;
+    }
+    #tvGuideCenter {
+        position: relative;
+        width: 600px;
+        left: 200px;
+        top: 150px;
 
     }
 
-    /*T.V. Guide*/
     #flipbook {
-        grid-area: 1 / 2 / 2 / 3;
         background-color: transparent;
-        height: 600px;
-        width: 800px;
+        z-index: 50;
     }
 
     .guideCover {
@@ -47,69 +56,66 @@
 
     /*Nav menu*/
     #remote {
-        grid-area: 1 / 1 / 2 / 2;
-        background-image: url("../img/remote.png");
+        grid-area: 2 / 1 / 3 / 2;
+        border: 2px solid silver;
+        border-radius: 25%;
+        background-image: url("../img/remote.jpg");
         background-repeat: no-repeat;
-        height: auto;
-        width: auto;
+        background-size: 100% 100%;
+        width: 1000px;
         display: grid;
-        grid-template-columns: 60px 75px 70px 50px;
-        grid-template-rows: 120px 50px 50px 50px 50px 100px;
+        grid-template-columns: 35% 30% 35%;
+        grid-template-rows: 50% 50%;
+        margin-left: 10px;
     }
 
     .button {
-        background-color: transparent;
+        background-color: rgba(0, 0, 0, 0.2);;
         border-color: transparent;
-    }
-
-    #button1 {
-        grid-area: 2 / 2 / 3 / 3;
-        height: auto;
-        width: auto;
+        box-shadow: 0 0 5px black;
 
     }
 
-    #button2 {
-        grid-area: 2 / 3 / 3/ 4;
-        height: auto;
-        width: auto;
+    #powerBtn {
+        grid-area: 1 / 2 / 2 / 3;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        margin-left: 40%;
+        margin-top: 5%;
+
+
     }
 
-    #button3 {
-        grid-area: 3 / 2 / 4 / 3;
-        height: auto;
-        width: auto;
+    #aboutBtn {
+        grid-area: 1 / 1 / 2/ 2;
+
+    }
+
+    #gardenBtn {
+        grid-area: 2 / 1 / 3 / 2;
+
     }
 
     #button4 {
-        grid-area: 3 / 3 / 4 / 4;
-        height: auto;
-        width: auto;
+        grid-area: 2 / 3 / 3 / 4;
+
     }
 
     #button5 {
-        grid-area: 4 / 2 / 5 / 3;
-        height: auto;
-        width: auto;
+        grid-area: 1 / 3 / 2 / 4;
+
+    }
+    #guideBtn{
+        grid-area: 2 / 2 / 3 / 3;
+        height: 30px;
+        width: 150px;
+        border-radius: 20px;
+        margin-left: 25%;
+        margin-top: 10%;
+
     }
 
-    #button6 {
-        grid-area: 4 / 3 / 5 / 4;
-        height: auto;
-        width: auto;
-    }
-
-    #button7 {
-        grid-area: 5 / 2 / 6 / 3;
-        height: auto;
-        width: auto;
-    }
-
-    #button8 {
-        grid-area: 5 / 3 / 6 / 4;
-        height: auto;
-        width: auto;
-    }
 }
     /*------------------------------------------World area--------------------------------------------*/
 

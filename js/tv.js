@@ -1,9 +1,10 @@
 'use strict';
-function onOff(){
-    if(document.getElementById("tvScreen").className === 'tvScreen') {
-        document.getElementById("tvScreen").className = 'onOff';
+function guideOnOff(){
+    var element = document.getElementById("tvGuide");
+    if (element.style.display === 'none') {
+        element.style.display = 'block';
     } else {
-        document.getElementById("tvScreen").className = 'tvScreen';
+        element.style.display = 'none';
     }
 }
 

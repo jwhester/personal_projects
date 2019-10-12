@@ -1,17 +1,16 @@
-* {
-    box-sizing: border-box
-}
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
     #gardenWorld {
         grid-area: 1 / 1 / 1 / 1;
         display: grid;
-        height: 70vh;
-        width: 100%;
+        height: 100%;
+        width: 1040px;
         background-size: 100% 100%;
         background-image: url("../img/gardenWorld.jpg");
         background-repeat: no-repeat;
         grid-template-areas: "sun sign cloud" ". . ." "flower tv .";
+        margin: 0;
+        padding: 0;
     }
 
     #gardenWorldTV {
@@ -28,7 +27,7 @@
         grid-area: sign;
         font-family: 'Ewert', cursive;
         font-size: 30px;
-        z-index: 2;
+        z-index: 1;
 
     }
 
@@ -40,101 +39,97 @@
 
     #cloud-background-wrap1 {
         position: absolute;
-        z-index: 1;
         left: 50px;
-        top: -20px;
+        z-index: 1;
     }
-
     #cloud-background-wrap2 {
         position: absolute;
         left: 50px;
-        top: -10px;
-        z-index: 3;
+        z-index: 2;
+        top: 50px;
     }
     #cloud-background-wrap3 {
         position: absolute;
         left: 50px;
-        top: -15px;
-        z-index: 4;
+        top: 10px;
+        z-index: 3;
     }
     #cloud-background-wrap4 {
         position: absolute;
-        left: 50px;
-        top: -10px;
-        z-index: 0;
+        left: 150px;
+        top: -20px;
     }
 
 
     /* KEYFRAMES */
     @-webkit-keyframes animateCloud {
         0% {
-            margin-left: -1000px;
+            margin-left: -500px;
         }
         100% {
-            margin-left: 550%; /*Allows all of the clouds to fully leave the screen before they disappear*/
+            margin-left: 1000px;
         }
     }
 
     @-moz-keyframes animateCloud {
         0% {
-            margin-left: -1000px;
+            margin-left: -500px;
         }
         100% {
-            margin-left: 550%;
+            margin-left: 1000px;
         }
     }
 
     @keyframes animateCloud {
         0% {
-            margin-left: -1000px;
+            margin-left: -500px;
         }
         100% {
-            margin-left: 550%;
+            margin-left: 1000px;
         }
     }
 
     /* ANIMATIONS */
     .x1 {
-        -webkit-animation: animateCloud 20s linear infinite;
-        -moz-animation: animateCloud 20s linear infinite;
-        animation: animateCloud 20s linear infinite;
-        -webkit-transform: scale(0.85);
-        -moz-transform: scale(0.85);
-        transform: scale(0.85);
-    }
-
-    .x2 {
-        -webkit-animation: animateCloud 40s linear infinite;
-        -moz-animation: animateCloud 40s linear infinite;
-        animation: animateCloud 40s linear infinite;
-        -webkit-transform: scale(0.65);
-        -moz-transform: scale(0.65);
-        transform: scale(0.65);
-    }
-
-    .x3 {
         -webkit-animation: animateCloud 30s linear infinite;
         -moz-animation: animateCloud 30s linear infinite;
         animation: animateCloud 30s linear infinite;
+        -webkit-transform: scale(0.95);
+        -moz-transform: scale(0.95);
+        transform: scale(0.95);
+        overflow: hidden;
+        position: absolute;
+
+    }
+
+    .x2 {
+        -webkit-animation: animateCloud 25s linear infinite;
+        -moz-animation: animateCloud 25s linear infinite;
+        animation: animateCloud 25s linear infinite;
+        -webkit-transform: scale(0.6);
+        -moz-transform: scale(0.6);
+        transform: scale(0.6);
+        overflow: hidden;
+        position: absolute;
+    }
+
+    .x3 {
+        -webkit-animation: animateCloud 20s linear infinite;
+        -moz-animation: animateCloud 20s linear infinite;
+        animation: animateCloud 20s linear infinite;
         -webkit-transform: scale(0.75);
         -moz-transform: scale(0.75);
         transform: scale(0.75);
+        overflow: hidden;
+        position: absolute;
     }
-    .x4 {
-        -webkit-animation: animateCloud 35s linear infinite;
-        -moz-animation: animateCloud 35s linear infinite;
-        animation: animateCloud 35s linear infinite;
-        -webkit-transform: scale(0.65);
-        -moz-transform: scale(0.65);
-        transform: scale(0.65);
-    }
+
+
 
     /*---------------------------The Sun-------------------------------------*/
     .container-sun {
         grid-area: sun;
-        z-index: 2;
     }
-
 
     /* the svg element */
     .svg-sun {
@@ -277,7 +272,7 @@
     /*------------------------html5 flower----------------------------*/
     #position {
         top: 90px;
-        left: 50px;
+        left: 80px;
         z-index: 1;
     }
 
@@ -302,7 +297,7 @@
         box-shadow: 15px 17px #FFE000,
         -15px 17px #FFE000,
         -22px -7px #FFE000,
-        0px -22px #FFE000,
+        0 -22px #FFE000,
         22px -7px #FFE000;
     }
 
@@ -351,58 +346,13 @@
         -o-transform: rotate(50deg);
     }
 
-    @keyframes petals {
-        0% {
-            left: 14px;
-            transform: rotate(-5deg);
-        }
-        25% {
-            left: 30px;
-            transform: rotate(5deg);
-        }
-        50% {
-            left: 14px;
-            transform: rotate(-5deg);
-        }
-        75% {
-            left: 30px;
-            transform: rotate(5deg);
-        }
-        100% {
-            left: 14px;
-            transform: rotate(-5deg);
-        }
-    }
-
-    @keyframes trunk {
-        0% {
-            left: 34px;
-            transform: rotate(-5deg);
-        }
-        25% {
-            left: 40px;
-            transform: rotate(5deg);
-        }
-        50% {
-            left: 34px;
-            transform: rotate(-5deg);
-        }
-        75% {
-            left: 40px;
-            transform: rotate(5deg);
-        }
-        100% {
-            left: 34px;
-            transform: rotate(-5deg);
-        }
-    }
 
 
     /*-------------------------css flower------------------------------------*/
     #position1 {
-        top: 420px;
-        right: 50px;
-        z-index: 1;
+        top: 150px;
+        left: 720px;
+        z-index: 5;
     }
 
     .sunflower1 {
@@ -445,7 +395,7 @@
 
     /*----------------------JavaScript flower-----------------------------------*/
     #position2 {
-        top: 180px;
+        top: 120px;
         left: 260px;
         z-index: 1;
     }
@@ -521,8 +471,8 @@
 
     /*----------------------Java Flower------------------------------------*/
     #position3 {
-        top: 70px;
-        left: 1050px;
+        top: 40px;
+        left: 850px;
         z-index: 3;
     }
 
@@ -594,6 +544,53 @@
         -moz-transform: rotate(50deg);
         -ms-transform: rotate(50deg);
         -o-transform: rotate(50deg);
+    }
+
+    /*----------------------Flower Animations-----------------------------------*/
+    @keyframes petals {
+        0% {
+            left: 14px;
+            transform: rotate(-5deg);
+        }
+        25% {
+            left: 30px;
+            transform: rotate(5deg);
+        }
+        50% {
+            left: 14px;
+            transform: rotate(-5deg);
+        }
+        75% {
+            left: 30px;
+            transform: rotate(5deg);
+        }
+        100% {
+            left: 14px;
+            transform: rotate(-5deg);
+        }
+    }
+
+    @keyframes trunk {
+        0% {
+            left: 34px;
+            transform: rotate(-5deg);
+        }
+        25% {
+            left: 40px;
+            transform: rotate(5deg);
+        }
+        50% {
+            left: 34px;
+            transform: rotate(-5deg);
+        }
+        75% {
+            left: 40px;
+            transform: rotate(5deg);
+        }
+        100% {
+            left: 34px;
+            transform: rotate(-5deg);
+        }
     }
 
 
