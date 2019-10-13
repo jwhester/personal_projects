@@ -34,6 +34,20 @@ function gardenWorld() {
         x.style.display = "none";
     }
 }
+function contactWorld() {
+    var contact = document.getElementById("contactWorld");
+    var instructions = document.getElementById("instructions");
+    var x = document.getElementById("gardenWorld");
+    var element= document.getElementById("intro");
+    if (contact.style.display === 'none') {
+        contact.style.display = "block";
+        element.style.display = 'none';
+        instructions.style.display = 'none';
+        x.style.display = 'none'
+    } else {
+        contact.style.display = "none";
+    }
+}
 //-------------------TV Guide----------------------------------------
 $("#flipbook").turn({
     width: 400,
