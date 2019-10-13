@@ -1,5 +1,5 @@
 'use strict';
-
+//-----------Button functions-----------------------
 function guideOnOff(){
     var element = document.getElementById("tvGuide");
     if (element.style.display === 'none') {
@@ -34,7 +34,7 @@ function gardenWorld() {
         x.style.display = "none";
     }
 }
-
+//-------------------TV Guide------------------------
 $("#flipbook").turn({
     width: 400,
     height: 300,
