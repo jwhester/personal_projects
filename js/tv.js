@@ -34,7 +34,7 @@ function gardenWorld() {
         x.style.display = "none";
     }
 }
-//-------------------TV Guide------------------------
+//-------------------TV Guide----------------------------------------
 $("#flipbook").turn({
     width: 400,
     height: 300,
