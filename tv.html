@@ -29,8 +29,8 @@
 <div id="instructions">
     <ol>
         <li>Use the remote at the bottom of your screen to change the channels.</li>
-        <li>If you ever get lost or you just want more information press the guide button.</li>
-        <li>To begin press the <span>on</span> button located in the center of the remote.</li>
+        <li>If you ever get lost or you just want more information press the <span style="color: lawngreen"><i class="fas fa-grip-lines"></i></span> button.</li>
+        <li>To begin press the <span style="color: red"><i class="fas fa-power-off"></i></span> button located in the center of the remote.</li>
     </ol>
 </div>
 <!-----------------------Intro World---------------------------------------------------------->
@@ -39,6 +39,13 @@
     <img src="img/twilightZone.gif" alt="" id="introTV">
     </div>
 </div>
+<!-----------------------exp world----------------------------------------------------------->
+<!--<div id="about">-->
+<!--    <div id="aboutTv">-->
+<!--        <img src="img/static.gif" alt="" id="aboutTVscreen">-->
+<!--    </div>-->
+<!--</div>-->
+
 <!----------------------Garden World--------------------------------------------------------->
 <div id="gardenWorld">
     <div id="gardenWorldTV">
@@ -102,17 +109,17 @@
         </div>
     </div>
     <div id="sign">
-        <h2><i class="fas fa-seedling"></i>Garden of Knowledge</h2>
+        <h2><span style="color: #0FBD03"><i class="fas fa-seedling"></i></span>Garden of Knowledge</h2>
     </div>
 </div>
     <!--    Navbar: Remote for T.V.-->
     <div id="remote">
-        <button id="powerBtn" class="button" onclick="intro()">On-Off</button>
-        <button id="aboutBtn" class="button" onclick="">1</button>
-        <button id="gardenBtn" class="button" onclick="gardenWorld()">2</button>
-        <button id="button4" class="button">4</button>
-        <button id="button5" class="button">3</button>
-        <button id="guideBtn" class="button" onclick="guideOnOff()">Guide</button>
+        <button id="powerBtn" class="button metal linear" onclick="intro()"><i class="fas fa-power-off"></i></button>
+        <button id="aboutBtn" class="button metal linear" onclick="">1</button>
+        <button id="gardenBtn" class="button metal linear" onclick="gardenWorld()">2</button>
+        <button id="workBtn" class="button metal linear">3</button>
+        <button id="contactBtn" class="button metal linear">4</button>
+        <button id="guideBtn" class="button metal linear" onclick="guideOnOff()"><i class="fas fa-grip-lines"></i></button>
     </div>
 
 <!--        Content area: Television-->

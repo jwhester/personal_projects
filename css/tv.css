@@ -88,11 +88,17 @@
         position: relative;
         top: 0;
         transition: all ease 0.3s;
+        background-image: linear-gradient(darkred, red);
+        font-size: 40px;
+        font-family: 'VT323', monospace;
     }
 
     #powerBtn:active {
         box-shadow: 0 3px 0 red;
         top: 3px;
+        color: red;
+        text-shadow: palevioletred 0 -1px 0, indianred 0 2px 1px, red 0 0 5px, darkred 0 0 20px;
+
     }
 
     #aboutBtn {
@@ -106,11 +112,17 @@
         position: relative;
         top: 0;
         transition: all ease 0.3s;
+        background-color: cyan;
+        font-size: 40px;
+        font-family: 'VT323', monospace;
     }
 
     #aboutBtn:active {
         box-shadow: 0 3px 0 cyan;
         top: 3px;
+        color: cyan;
+        text-shadow: #00FFFF 0 -1px 0, #00EAEA 0 2px 1px, #00D6D6 0 0 5px, #008484 0 0 20px;
+
     }
 
     #gardenBtn {
@@ -124,32 +136,20 @@
         position: relative;
         top: 0;
         transition: all ease 0.3s;
+        background-color: yellow;
+        font-size: 40px;
+        font-family: 'VT323', monospace;
     }
 
     #gardenBtn:active {
         box-shadow: 0 3px 0 yellow;
         top: 3px;
+        color: yellow;
+        text-shadow: hsla(60, 100%, 50%, 0.3) 0 -1px 0, hsl(60, 100%, 50%) 0 2px 1px, hsl(60, 100%, 50%) 0 0 5px, hsla(60, 100%, 50%, 0.6) 0 0 20px;
+
     }
 
-    #button4 {
-        grid-area: 2 / 3 / 3 / 4;
-        width: 80px;
-        height: 50px;
-        border-radius: 50%;
-        margin-left: 30%;
-        margin-top: 2%;
-        box-shadow: 0 5px 5px black;
-        position: relative;
-        top: 0;
-        transition: all ease 0.3s;
-    }
-
-    #button4:active {
-        box-shadow: 0 3px 0 orange;
-        top: 3px;
-    }
-
-    #button5 {
+    #workBtn {
         grid-area: 1 / 3 / 2 / 4;
         width: 80px;
         height: 50px;
@@ -160,12 +160,44 @@
         position: relative;
         top: 0;
         transition: all ease 0.3s;
+        font-size: 40px;
+        font-family: 'VT323', monospace;
+
     }
 
-    #button5:active {
-        box-shadow: 0 3px 0 #F60FC1;
+    #workBtn:active {
+        box-shadow: 0 3px 0 #0033CC;
         top: 3px;
+        color: blue;
+        text-shadow: hsla(210,100%,20%,.3) 0 -1px 0, hsl(210,100%,85%) 0 2px 1px, hsla(200,100%,80%,1) 0 0 5px, hsla(210,100%,50%,.6) 0 0 20px;
+
     }
+    #contactBtn {
+        grid-area: 2 / 3 / 3 / 4;
+        width: 80px;
+        height: 50px;
+        border-radius: 50%;
+        margin-left: 30%;
+        margin-top: 2%;
+        box-shadow: 0 5px 5px black;
+        position: relative;
+        top: 0;
+        transition: all ease 0.3s;
+        background-color: orange;
+        font-size: 40px;
+        font-family: 'VT323', monospace;
+    }
+    }
+
+    #contactBtn:active {
+        box-shadow: 0 3px 0 orange;
+        top: 3px;
+        color: orange;
+        text-shadow: hsla(39, 100%, 50%, 0.3) 0 -1px 0, hsl(46, 100%, 51%) 0 2px 1px, hsl(39, 100%, 50%) 0 0 5px, hsla(23, 100%, 50%, 0.6) 0 0 20px;
+
+    }
+
+
 
     #guideBtn {
         grid-area: 2 / 2 / 3 / 3;
@@ -178,14 +210,50 @@
         position: relative;
         top: 0;
         transition: all ease 0.3s;
+        background-image: linear-gradient(green, lawngreen);
+        font-size: 30px;
+        font-family: 'VT323', monospace;
     }
 
     #guideBtn:active {
-        box-shadow: 0 3px 0 lawngreen;
         top: 3px;
+        color: #67CE00;
+        box-shadow: 0 3px 0 lawngreen;
+        text-shadow: #90FC31 0 -1px 0, #31FC13 0 2px 1px, #00D118 0 0 5px, #0FBD03 0 0 20px;
+
+    }
+    .metal {
+        position: relative;
+        margin: 40px auto;
+        outline: none;
+        text-align: center;
+        color: hsla(0,0%,20%,1);
+        text-shadow: hsla(0,0%,40%,.5) 0 -1px 0, hsla(0,0%,100%,.6) 0 2px 1px;
+        background-color: hsl(0,0%,90%);
+        box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
+        inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+        inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+        inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+        hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
+        hsla(0,0%,100%,.5) 0  5px 6px 4px; /* outer HL */
+        transition: color .2s;
     }
 
-}
+    /* Linear ------------------------- */
+
+    .metal.linear {
+        width: 100px;
+        height: 80px;
+        border-radius: .5em;
+        background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),
+        -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
+        -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
+        linear-gradient(180deg, hsl(0,0%,78%)  0%,
+                hsl(0,0%,90%) 47%,
+                hsl(0,0%,78%) 53%,
+                hsl(0,0%,70%)100%);
+    }
+
 
 /*---------------------------------------------World area-------------------------------------------*/
 #instructions {
@@ -200,10 +268,7 @@
 #instructions li {
     padding: 10px;
 }
-#instructions span {
-    color: red;
-    font-size: 22px;
-}
+
 
 /*----------------------------------------------------Intro------------------------------------------*/
 #intro {
