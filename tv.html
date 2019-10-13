@@ -6,7 +6,7 @@
     <title>J.W. Hester</title>
     <link rel="stylesheet" href="css/tv.css">
     <link rel="stylesheet" href="css/gardenWorld.css">
-    <link href="https://fonts.googleapis.com/css?family=Ewert&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ewert|VT323|Righteous&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4db56fe07d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
 <body>
@@ -23,6 +23,20 @@
             <div class="guide">p7</div>
             <div class="guide">p8</div>
         </div>
+    </div>
+</div>
+<!------------------------Instructions Screen------------------------------------------------>
+<div id="instructions">
+    <ol>
+        <li>Use the remote at the bottom of your screen to change the channels.</li>
+        <li>If you ever get lost or you just want more information press the guide button.</li>
+        <li>To begin press the <span>on</span> button located in the center of the remote.</li>
+    </ol>
+</div>
+<!-----------------------Intro World---------------------------------------------------------->
+<div id="intro">
+    <div id="introTVscreen">
+    <img src="img/twilightZone.gif" alt="" id="introTV">
     </div>
 </div>
 <!----------------------Garden World---------------------------------------------------------->
@@ -93,9 +107,9 @@
 </div>
     <!--    Navbar: Remote for T.V.-->
     <div id="remote">
-        <button id="powerBtn" class="button" >On-Off</button>
+        <button id="powerBtn" class="button" onclick="intro()">On-Off</button>
         <button id="aboutBtn" class="button" onclick="">1</button>
-        <button id="gardenBtn" class="button">2</button>
+        <button id="gardenBtn" class="button" onclick="gardenWorld()">2</button>
         <button id="button4" class="button">4</button>
         <button id="button5" class="button">3</button>
         <button id="guideBtn" class="button" onclick="guideOnOff()">Guide</button>
