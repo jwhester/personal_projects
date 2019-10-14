@@ -1,4 +1,5 @@
 'use strict';
+
 //-----------Button functions-----------------------
 function guideOnOff(){
     var element = document.getElementById("tvGuide");
@@ -9,41 +10,60 @@ function guideOnOff(){
     }
 }
 
-function intro() {
-    var instructions = document.getElementById("instructions");
-    var element= document.getElementById("intro");
-    var x = document.getElementById("gardenWorld");
-    if (element.style.display === 'none') {
-        element.style.display = 'block';
-        x.style.display = 'none';
-        instructions.style.display = 'none';
+function onOff() {
+    var contact = document.getElementById("contactWorld");
+    var instructions = document.getElementById("instructionsTV");
+    var workWorld= document.getElementById("workWorld");
+    var gardenWorld = document.getElementById("gardenWorld");
+    if (instructions.style.display === 'none') {
+        instructions.style.display = 'block';
+        gardenWorld.style.display = 'none';
+        workWorld.style.display = 'none';
+        contact.style.display = 'none';
     } else {
-        element.style.display = 'none';
+        instructions.style.display = 'none';
+    }
+}
+
+function workWorld() {
+    var contact = document.getElementById("contactWorld");
+    var instructions = document.getElementById("instructionsTV");
+    var workWorld= document.getElementById("workWorld");
+    var gardenWorld = document.getElementById("gardenWorld");
+    if (workWorld.style.display === 'none') {
+        workWorld.style.display = 'block';
+        gardenWorld.style.display = 'none';
+        instructions.style.display = 'none';
+        contact.style.display = 'none';
+    } else {
+        workWorld.style.display = 'none';
     }
 }
 
 function gardenWorld() {
-    var instructions = document.getElementById("instructions");
-    var x = document.getElementById("gardenWorld");
-    var element= document.getElementById("intro");
-    if (x.style.display === 'none') {
-        x.style.display = "grid";
-        element.style.display = 'none'
+    var contact = document.getElementById("contactWorld");
+    var instructions = document.getElementById("instructionsTV");
+    var workWorld= document.getElementById("workWorld");
+    var gardenWorld = document.getElementById("gardenWorld");
+    if (gardenWorld.style.display === 'none') {
+        gardenWorld.style.display = "grid";
+        workWorld.style.display = 'none';
         instructions.style.display = 'none';
+        contact.style.display = 'none';
     } else {
         x.style.display = "none";
     }
 }
 function contactWorld() {
     var contact = document.getElementById("contactWorld");
-    var instructions = document.getElementById("instructions");
-    var x = document.getElementById("gardenWorld");
-    var element= document.getElementById("intro");
+    var instructions = document.getElementById("instructionsTV");
+    var workWorld= document.getElementById("workWorld");
+    var gardenWorld = document.getElementById("gardenWorld");
     if (contact.style.display === 'none') {
         contact.style.display = "block";
-        element.style.display = 'none';
+        workWorld.style.display = 'none';
         instructions.style.display = 'none';
-        x.style.display = 'none'
+        gardenWorld.style.display = 'none'
     } else {
         contact.style.display = "none";
     }
@@ -54,3 +74,5 @@ $("#flipbook").turn({
     height: 300,
     autoCenter: true
 });
+
+

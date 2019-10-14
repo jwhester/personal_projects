@@ -2,7 +2,7 @@
 @media screen and (min-width: 1024px) {
     #gardenWorld {
         display: none;
-        grid-area: 1 / 1 / 1 / 1;
+        grid-area: 1 / 1 / 2 / 2;
         height: 100%;
         width: 1040px;
         background-size: 100% 100%;
