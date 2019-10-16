@@ -15,7 +15,7 @@
 
     #gardenWorldTV {
         grid-area: tv;
-        background-image: url("../img/static.gif");
+        background-image: url("../img/gardenworld.gif");
         background-repeat: no-repeat;
         background-size: 215px 190px;
         background-position-x: 170px;

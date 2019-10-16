@@ -13,13 +13,7 @@
         margin: 0;
         padding: 0;
     }
-    canvas {
-        z-index: -1;
-        position: absolute;
-        top: 0;
-        left: 0;
 
-    }
     /*--------------------------Navigation Area--------------------------------------------------------*/
     /*T.V. Guide*/
     #tvGuide {
@@ -265,12 +259,10 @@
     /*---------------------------------------------World area-------------------------------------------*/
     #instructionsTV{
         position: absolute;
-        top: 50px;
-        left: 80px;
-        border: 10px solid cyan;
+        border: 20px solid cyan;
         border-radius: 10px;
         height: 500px;
-        width: 850px;
+        width: 1024px;
         box-shadow: 0 1px 36px cyan, 0 1px 34px cyan;
 
     }
@@ -286,7 +278,6 @@
         font-size: 30px;
         font-family: 'Righteous', cursive;
     }
-
 
     #instructions li {
         padding: 10px;
@@ -308,7 +299,7 @@
         position: absolute;
         top: 120px;
         left: 100px;
-        background-image: url("../img/static.gif");
+        background-image: url("../img/aboutme.gif");
         background-repeat: no-repeat;
         background-size: 100% 98%;
     }
@@ -387,8 +378,9 @@
         position: absolute;
         top: 180px;
         left: 400px;
-        height: 170px;
+        height: 150px;
         width: 200px;
+        z-index: -1;
     }
 
     #workTV {
@@ -415,7 +407,7 @@
         width: 500px;
         position: absolute;
         left: 590px;
-        top: 25px;
+        /*top: 25px;*/
         z-index: 1;
 
     }

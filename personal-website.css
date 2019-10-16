@@ -1,0 +1,553 @@
+@import url("https://fonts.googleapis.com/css?family=Nixie+One");
+@import url("https://fonts.googleapis.com/css?family=League+Script");
+/* line 26, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 28, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+body {
+  background-image: url("../img/brickwall.png");
+  display: flex;
+  background-size: 100vw 100vh;
+}
+
+@media (max-width: 767px) {
+  /* line 38, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  body {
+    margin: 10%;
+    font-family: 'Nixie One', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+  }
+  /* line 43, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  a {
+    color: white;
+  }
+  /* line 46, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  h3 {
+    color: white;
+  }
+  /* line 50, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .theater-sign {
+    display: none;
+  }
+  /* line 53, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+  }
+  /* line 61, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .sign {
+    -ms-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+  }
+  /* line 67, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  #title {
+    font-size: 50px;
+  }
+  /* line 70, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  #name {
+    -webkit-animation: blink 0.01s infinite alternate;
+    -moz-animation: blink 0.01s infinite alternate;
+    -o-animation: blink 0.01s infinite alternate;
+    animation: blink 0.01s infinite alternate;
+  }
+  /* line 76, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  #fade {
+    opacity: 0.8;
+    color: #ebffff;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), 0 0px 15px #fff, 0 0 10px #38eeff, 0 0 50px #38eeff;
+    -webkit-animation: fade 3s infinite alternate;
+    -moz-animation: fade 3s infinite alternate;
+    -o-animation: fade 3s infinite alternate;
+    animation: fade 3s infinite alternate;
+  }
+  /* line 85, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .neon-blue {
+    margin: 0 auto;
+    text-align: center;
+    color: #ebffff;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), 0 0px 15px #fff, 0 0 10px #38eeff, 0 0 50px #38eeff;
+  }
+  /* line 91, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .neon-purple {
+    font-family: 'League Script', Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ccf;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5), 0 0 20px #fff, 0 0 10px #7d26cd, 0 0 50px #7d26cd;
+  }
+  @-moz-keyframes blink {
+    70% {
+      opacity: 0.7;
+    }
+  }
+  @-webkit-keyframes blink {
+    45% {
+      opacity: 0.5;
+    }
+  }
+  @-o-keyframes blink {
+    70% {
+      opacity: 0.7;
+    }
+  }
+  @keyframes blink {
+    70% {
+      opacity: 0.7;
+    }
+  }
+  @-moz-keyframes fade {
+    40% {
+      opacity: 0.8;
+    }
+    42% {
+      opacity: 0.1;
+    }
+    43% {
+      opacity: 0.8;
+    }
+    45% {
+      opacity: 0.1;
+    }
+    46% {
+      opacity: 0.8;
+    }
+  }
+  @-webkit-keyframes fade {
+    40% {
+      opacity: 0.8;
+    }
+    42% {
+      opacity: 0.1;
+    }
+    43% {
+      opacity: 0.8;
+    }
+    45% {
+      opacity: 0.1;
+    }
+    46% {
+      opacity: 0.8;
+    }
+  }
+  @-o-keyframes fade {
+    40% {
+      opacity: 0.8;
+    }
+    42% {
+      opacity: 0.1;
+    }
+    43% {
+      opacity: 0.8;
+    }
+    45% {
+      opacity: 0.1;
+    }
+    46% {
+      opacity: 0.8;
+    }
+  }
+  @keyframes fade {
+    40% {
+      opacity: 0.8;
+    }
+    42% {
+      opacity: 0.1;
+    }
+    43% {
+      opacity: 0.8;
+    }
+    45% {
+      opacity: 0.1;
+    }
+    46% {
+      opacity: 0.8;
+    }
+  }
+  /* line 188, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .logo {
+    width: 65%;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    user-select: none;
+  }
+  /* line 195, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .logo b {
+    font-family: 'Fredoka One', cursive;
+    text-decoration: underline;
+    font-size: 30px;
+    color: #fee;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+  }
+  /* line 202, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .logo b span {
+    animation: blink linear infinite 2s;
+  }
+  /* line 205, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .logo b span:nth-of-type(2) {
+    animation: blink linear infinite 3s;
+  }
+  @keyframes blink {
+    78% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    79% {
+      color: #333;
+    }
+    80% {
+      text-shadow: none;
+    }
+    81% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    82% {
+      color: #333;
+      text-shadow: none;
+    }
+    83% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    92% {
+      color: #333;
+      text-shadow: none;
+    }
+    92.5% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+  }
+  /* line 246, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  img {
+    width: 200px;
+    height: 200px;
+  }
+  /* line 250, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .timeline {
+    line-height: 1.4em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  /* line 256, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .timeline h1, .timeline h2, .timeline h3, .timeline h4, .timeline h5, .timeline h6 {
+    line-height: inherit;
+  }
+  /*----- TIMELINE ITEM -----*/
+  /* line 263, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .timeline-item {
+    padding-left: 40px;
+    position: relative;
+  }
+  /* line 266, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .timeline-item:last-child {
+    padding-bottom: 0;
+  }
+  /*----- TIMELINE INFO -----*/
+  /* line 273, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .timeline-info {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 0 0 .5em 0;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: red;
+  }
+  /*----- TIMELINE MARKER -----*/
+  /* line 284, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .timeline-marker {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15px;
+  }
+  /* line 288, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .timeline-marker:before {
+    background: #FF6B6B;
+    border: 3px solid transparent;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    height: 15px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 15px;
+    transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+  /* line 301, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .timeline-marker:after {
+    content: "";
+    width: 3px;
+    background: #CCD5DB;
+    display: block;
+    position: absolute;
+    top: 24px;
+    bottom: 0;
+    left: 6px;
+  }
+  /* line 309, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .timeline-item:last-child .timeline-marker:after {
+    content: none;
+  }
+  /* line 313, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .timeline-item:not(.period):hover .timeline-marker:before {
+    background: transparent;
+    border: 3px solid #FF6B6B;
+  }
+  /*----- TIMELINE CONTENT -----*/
+  /* line 320, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .timeline-content {
+    padding-bottom: 40px;
+  }
+  /* line 322, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .timeline-content p:last-child {
+    margin-bottom: 0;
+  }
+  /*----- TIMELINE PERIOD -----*/
+  /* line 329, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .period {
+    padding: 0;
+  }
+  /* line 331, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .period .timeline-info {
+    display: none;
+  }
+  /* line 335, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .period .timeline-marker:before {
+    background: transparent;
+    content: "";
+    width: 15px;
+    height: auto;
+    border: none;
+    border-radius: 0;
+    top: 0;
+    bottom: 30px;
+    position: absolute;
+    border-top: 3px solid #CCD5DB;
+    border-bottom: 3px solid #CCD5DB;
+  }
+  /* line 348, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .period .timeline-marker:after {
+    content: "";
+    height: 32px;
+    top: auto;
+  }
+  /* line 354, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .period .timeline-content {
+    padding: 40px 0 70px;
+  }
+  /* line 357, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .period .timeline-title {
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 370, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  #mobile {
+    display: none;
+  }
+  /* line 373, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  body {
+    background-image: url("../img/brickwall.png");
+    display: flex;
+    background-size: 100vw 100vh;
+  }
+  /* line 379, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .theater-sign {
+    height: 300px;
+    margin-left: 25%;
+  }
+  /* line 384, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .sign-top {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* line 388, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .sign-lines {
+    flex: 0 1 30%;
+    margin-top: 10px;
+  }
+  /* line 392, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .sign-line {
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0 0 10px #fff, 0 0 20px #07294D, 0 0 35px #07294D, 0 0 40px #07294D;
+    height: 6px;
+    margin-top: 16px;
+  }
+  /* line 399, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .sign-title {
+    color: #FFF4CD;
+    flex: 0 1 40%;
+    font-family: 'Fredoka One', cursive;
+    font-size: 60px;
+    letter-spacing: 10px;
+    margin: 6px auto;
+    padding-left: 12px;
+    text-align: center;
+    text-shadow: 0 0 10px #fff, 0 0 20px #FFC600, 0 0 35px #FFC600, 0 0 40px #FFC600;
+    text-transform: uppercase;
+    animation: flicker 3s linear infinite;
+    -moz-animation: flicker 3s linear infinite;
+    -webkit-animation: flicker 3s linear infinite;
+  }
+  /* line 415, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .grid-container {
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #fff, 0 0 20px red, 0 0 35px red, 0 0 40px red, inset 0 0 10px #fff, inset 0 0 20px red, inset 0 0 35px red, inset 0 0 40px red;
+    color: #fff;
+    padding: 12px;
+    animation: flicker 3s linear infinite;
+    -moz-animation: flicker 3s linear infinite;
+    -webkit-animation: flicker 3s linear infinite;
+  }
+  /* line 426, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .grid {
+    border: 2px solid #333;
+    border-radius: 3px;
+    display: flex;
+    flex-flow: row wrap;
+    width: 700px;
+  }
+  /* line 433, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .grid::after {
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.3) inset;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+  }
+  /* line 443, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .grid-cells {
+    background: white;
+    border: 1px solid #333;
+    flex: 0 1 20%;
+    height: 24px;
+  }
+  /* line 449, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .show-details {
+    color: #303030;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 48px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: -176px;
+    z-index: 999;
+  }
+  @keyframes flicker {
+    from {
+      opacity: 1;
+    }
+    4% {
+      opacity: .9;
+    }
+    6% {
+      opacity: .85;
+    }
+    8% {
+      opacity: .95;
+    }
+    10% {
+      opacity: .90;
+    }
+    11% {
+      opacity: .922;
+    }
+    12% {
+      opacity: .9;
+    }
+    14% {
+      opacity: .95;
+    }
+    16% {
+      opacity: .98;
+    }
+    17% {
+      opacity: .9;
+    }
+    19% {
+      opacity: .93;
+    }
+    20% {
+      opacity: .99;
+    }
+    24% {
+      opacity: 1;
+    }
+    26% {
+      opacity: .94;
+    }
+    28% {
+      opacity: .98;
+    }
+    37% {
+      opacity: .93;
+    }
+    39% {
+      opacity: .96;
+    }
+    42% {
+      opacity: 1;
+    }
+    44% {
+      opacity: .97;
+    }
+    46% {
+      opacity: .94;
+    }
+    56% {
+      opacity: .9;
+    }
+    58% {
+      opacity: .9;
+    }
+    60% {
+      opacity: .99;
+    }
+    68% {
+      opacity: 1;
+    }
+    70% {
+      opacity: .9;
+    }
+    72% {
+      opacity: .95;
+    }
+    93% {
+      opacity: .93;
+    }
+    95% {
+      opacity: .95;
+    }
+    97% {
+      opacity: .93;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+/*# sourceMappingURL=personal-website.css.map */

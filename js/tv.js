@@ -81,7 +81,6 @@ function gardenWorld() {
 function contactWorld() {
     var contact = document.getElementById("contactWorld");
     var instructions = document.getElementById("instructionsTV");
-    var about = document.getElementById("about");
     var workWorld= document.getElementById("workWorld");
     var gardenWorld = document.getElementById("gardenWorld");
     if (contact.style.display === 'none') {
