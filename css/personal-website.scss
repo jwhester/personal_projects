@@ -46,6 +46,9 @@ body {
   h3 {
     color: white;
   }
+  p {
+    color: white;
+  }
   //--------------------------Header----------------------------------------
   .theater-sign{
     display: none;
@@ -194,16 +197,15 @@ body {
 
   .logo b{
     font-family: 'Fredoka One', cursive;
-    text-decoration: underline;
     font-size: 30px;
     color: #fee;
     text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
   }
   .logo b span{
-    animation: blink linear infinite 2s;
+    animation: blink linear infinite 8s;
   }
   .logo b span:nth-of-type(2){
-    animation: blink linear infinite 3s;
+    animation: blink linear infinite 9s;
   }
   @keyframes blink {
     78% {
@@ -240,11 +242,11 @@ body {
   }
 
 
-  //----------------------Work Experience------------------------------------
+  //----------------------Work&School Experience------------------------------------
   $primary-color: #FF6B6B;
   $primary-color-hover: scale-color($primary-color, $lightness: 32%);
   img {
-    width: 200px;
+    width: 280px;
     height: 200px;
   }
   .timeline {
@@ -282,6 +284,7 @@ body {
   /*----- TIMELINE MARKER -----*/
 
   .timeline-marker {
+    animation: text-flicker 8s linear infinite;
     position: absolute;
     top: 0; bottom: 0; left: 0;
     width: 15px;
@@ -359,9 +362,141 @@ body {
     }
   }
 
-//----------------------School and Skills----------------------------------
-
+//----------------------Skills----------------------------------
+  #skills img{
+  height: 100px;
+    width: 100px;
+  }
 //----------------------Contact Me-----------------------------------------
+
+
+  #resume {
+    position: absolute;
+    margin-left: 20%;
+
+  }
+  #contactBtns{
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+
+  }
+  #contact {
+    display: flex;
+    //width:65px;
+    //height: 65px;
+    justify-content: space-around;
+  }
+
+  a {
+    text-decoration: none;
+    color:#FF00E6;
+    font-size:45px;
+    letter-spacing:5px;
+    animation: text-flicker 10s linear infinite;
+  }
+
+  #offset {
+    animation: letter-flicker 2s linear infinite;
+  }
+
+  @keyframes text-flicker {
+    0% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+
+    2% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    8% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    9% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    12% {
+      opacity:0.1;
+      text-shadow: 0px 0px rgba(242, 22, 22, 1);
+    }
+    20% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    }
+    25% {
+      opacity:0.3;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    }
+    30% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    }
+
+    70% {
+      opacity:0.7;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    }
+
+    72% {
+      opacity:0.2;
+      text-shadow:0px 0px 29px rgba(242, 22, 22, 1)
+    }
+
+    77% {
+      opacity:.9;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    }
+    100% {
+      opacity:.9;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    }
+  }
+
+
+  @keyframes letter-flicker {
+    0% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    2% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    4% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+
+
+    19% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    21% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    23% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+
+    80% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    83% {
+      opacity:0.4;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    87% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+  }
 
 }
 //--------------------------------Full Size---------------------------------
