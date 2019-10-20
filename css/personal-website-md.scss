@@ -30,7 +30,7 @@ $blue: #07294D;
 
 
 //-------------------Mobile View----------------------------------------------------
-@include breakpoint(xs) {
+@include breakpoint(sm) {
   @import url("https://fonts.googleapis.com/css?family=Nixie+One");
   @import url("https://fonts.googleapis.com/css?family=League+Script");
   body {
@@ -38,18 +38,19 @@ $blue: #07294D;
     font-family: 'Nixie One', Helvetica, Arial, sans-serif;
     font-size: 20px;
     background-image: url("../img/brickwall.png");
-    //display: flex;
-    //background-repeat: no-repeat;
     background-size: 100vw 100vh;
   }
   a {
     color: white;
+
   }
   h3 {
     color: white;
+    font-size: 40px;
   }
   p {
     color: white;
+    font-size: 30px;
   }
   .theater-sign {
     display: none;
@@ -74,7 +75,7 @@ $blue: #07294D;
   }
 
   #title {
-    font-size: 50px;
+    font-size: 100px;
   }
   #name {
     -webkit-animation: blink 0.01s infinite alternate;
@@ -93,6 +94,7 @@ $blue: #07294D;
   }
   .neon-blue {
     font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
     margin: 0 auto;
     text-align: center;
     color: #ebffff;
@@ -100,7 +102,7 @@ $blue: #07294D;
   }
   .neon-purple {
     font-family: 'League Script', Helvetica, Arial, sans-serif;
-    font-size: 50px;
+    font-size: 100px;
     margin: 0 auto;
     text-align: center;
     color: #FF00E6;
@@ -204,7 +206,7 @@ $blue: #07294D;
 
   .logo p {
     font-family: 'Fredoka One', cursive;
-    font-size: 30px;
+    font-size: 60px;
     color: #FF00E6;
     text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #FF00E6, 0 0 0.5em #FF00E6, 0 0 0.1em #FF00E6, 0 10px 3px #000;
   }
@@ -250,22 +252,16 @@ $blue: #07294D;
 
 
   //----------------------Work&School Experience------------------------------------
-  $primary-color: #FF6B6B;
-  $primary-color-hover: scale-color($primary-color, $lightness: 32%);
   img {
-    width: 280px;
-    height: 200px;
+    width: 480px;
+    height: 400px;
   }
   .timeline {
-    line-height: 1.4em;
     list-style: none;
     margin: 0;
     padding: 0;
     width: 100%;
 
-    h1, h2, h3, h4, h5, h6 {
-      line-height: inherit;
-    }
   }
 
   /*----- TIMELINE ITEM -----*/
@@ -282,7 +278,7 @@ $blue: #07294D;
   /*----- TIMELINE INFO -----*/
 
   .timeline-info {
-    font-size: 16px;
+    font-size: 40px;
     font-weight: 700;
     letter-spacing: 3px;
     margin: 0 0 .5em 0;
@@ -334,7 +330,7 @@ $blue: #07294D;
   }
   .timeline-item:not(.period):hover .timeline-marker:before {
     background: transparent;
-    border: 3px solid $primary-color;
+    border: 3px solid #00D6D6;
   }
 
   /*----- TIMELINE CONTENT -----*/
@@ -344,6 +340,7 @@ $blue: #07294D;
 
     p:last-child {
       margin-bottom: 0;
+      font-size: 35px;
     }
   }
 
@@ -389,12 +386,12 @@ $blue: #07294D;
 
   //----------------------Skills----------------------------------
   #skills img {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
   }
   #theatre {
     border: inset black 10px;
-    height: 420px;
+    height: 620px;
     width: 100%;
     margin-left: -20px;
     text-align: center;
@@ -440,19 +437,21 @@ $blue: #07294D;
     transition: all 4s ease;
     transform: rotate(-15deg);
   }
+
+
   //----------------------Contact Me-----------------------------------------
 
   .fa-arrow-left {
     color: #00D6D6;
     padding: 20px;
-    font-size: 30px;
+    font-size: 60px;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), 0 0px 15px #fff, 0 0 10px #ebffff, 0 0 50px #ebffff;
     animation: blink linear infinite .8s;
   }
   .fa-arrow-right {
     color: #00D6D6;
     padding: 20px;
-    font-size: 30px;
+    font-size: 60px;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), 0 0px 15px #fff, 0 0 10px #ebffff, 0 0 50px #ebffff;
     animation: blink linear infinite .8s;
   }
@@ -474,6 +473,8 @@ $blue: #07294D;
   }
   #contact a {
     color: #00D6D6;
+    font-size: 100px;
+    margin: 20px;
   }
   a {
     text-decoration: none;
@@ -586,263 +587,3 @@ $blue: #07294D;
   }
 
 }
-
-//--------------------------------Full Size(768 & up)---------------------------------
-
-@include breakpoint(lg) {
-  #mobile {
-    display: none;
-  }
-
-  body {
-    background-image: url("../img/brickwall.png");
-    //background-repeat: repeat;
-    background-size: 100vw 100vh;
-  }
-  //=======================Top Sign========================================
-  .theater-sign {
-    height: auto;
-    width: auto;
-    margin: auto;
-  }
-
-  .sign-top {
-    display: flex;
-    justify-content: space-between;
-  }
-  .sign-lines {
-    flex: 0 1 30%;
-    margin-top: 10px;
-  }
-  .sign-line {
-    background: white;
-    border-radius: 3px;
-    box-shadow: 0 0 10px #fff, 0 0 20px $blue, 0 0 35px $blue, 0 0 40px $blue;
-    height: 6px;
-    margin-top: 16px;
-  }
-  .sign-title {
-    color: #FFF4CD;
-    flex: 0 1 40%;
-    font-family: 'Fredoka One', cursive;
-    font-size: 60px;
-    letter-spacing: 10px;
-    margin: 6px auto;
-    padding-left: 12px;
-    text-align: center;
-    text-shadow: 0 0 10px #fff, 0 0 20px $yellow, 0 0 35px $yellow, 0 0 40px $yellow;
-    text-transform: uppercase;
-
-    animation: flicker 3s linear infinite;
-    -moz-animation: flicker 3s linear infinite;
-    -webkit-animation: flicker 3s linear infinite;
-  }
-  .grid-container {
-    border: 5px solid white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #fff, 0 0 20px $red, 0 0 35px $red, 0 0 40px $red, inset 0 0 10px #fff, inset 0 0 20px $red, inset 0 0 35px $red, inset 0 0 40px $red;
-    color: #fff;
-    padding: 12px;
-
-    animation: flicker 3s linear infinite;
-    -moz-animation: flicker 3s linear infinite;
-    -webkit-animation: flicker 3s linear infinite;
-  }
-  .grid {
-    border: 2px solid #333;
-    border-radius: 3px;
-    display: flex;
-    flex-flow: row wrap;
-    width: auto;
-  }
-  .grid::after {
-    box-shadow: 0 0 30px 10px rgba(0, 0, 0, .3) inset;
-    content: "";
-    //position: absolute;
-    //top: 0;
-    //right: 0;
-    //bottom: 0;
-    //left: 0;
-    display: block;
-  }
-  .grid-cells {
-    background: white;
-    border: 1px solid #333;
-    flex: 0 1 20%;
-    height: 24px;
-  }
-  .show-details {
-    color: #303030;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 32px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    line-height: 48px;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    top: -176px;
-    z-index: 999;
-  }
-
-  @keyframes flicker {
-    from {
-      opacity: 1;
-    }
-    4% {
-      opacity: .9;
-    }
-    6% {
-      opacity: .85;
-    }
-    8% {
-      opacity: .95;
-    }
-    10% {
-      opacity: .90;
-    }
-    11% {
-      opacity: .922;
-    }
-    12% {
-      opacity: .9;
-    }
-    14% {
-      opacity: .95;
-    }
-    16% {
-      opacity: .98;
-    }
-    17% {
-      opacity: .9;
-    }
-    19% {
-      opacity: .93;
-    }
-    20% {
-      opacity: .99;
-    }
-    24% {
-      opacity: 1;
-    }
-    26% {
-      opacity: .94;
-    }
-    28% {
-      opacity: .98;
-    }
-    37% {
-      opacity: .93;
-    }
-    39% {
-      opacity: .96;
-    }
-    42% {
-      opacity: 1;
-    }
-    44% {
-      opacity: .97;
-    }
-    46% {
-      opacity: .94;
-    }
-    56% {
-      opacity: .9;
-    }
-    58% {
-      opacity: .9;
-    }
-    60% {
-      opacity: .99;
-    }
-    68% {
-      opacity: 1;
-    }
-    70% {
-      opacity: .9;
-    }
-    72% {
-      opacity: .95;
-    }
-    93% {
-      opacity: .93;
-    }
-    95% {
-      opacity: .95;
-    }
-    97% {
-      opacity: .93;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  //  ==============================Movie posters=============================================
-
-  .poster {
-    height: 700px;
-    width: 600px;
-  }
-  .about {
-    margin-top: 10%;
-    margin-left: 13%;
-    @include breakpoint(md) {
-
-    }
-  }
-  .exp {
-    margin-top: 10%;
-    margin-left: 13%;
-    @include breakpoint(md) {
-
-    }
-
-  }
-  .skill {
-    margin-top: 10%;
-    margin-left: 13%;
-    @include breakpoint(md) {
-
-    }
-  }
-  .contact {
-    margin-top: 10%;
-    margin-left: 13%;
-    @include breakpoint(md) {
-
-    }
-  }
-  /*** effect - image opacity ***/
-
-
-  .img-opacity .img-1 {
-    opacity: 1
-  }
-  .img-opacity .img-2 {
-    opacity: 0
-  }
-  .img-opacity:hover .img-1 {
-    opacity: 0
-  }
-  .img-opacity:hover .img-2 {
-    opacity: 1
-  }
-
-  .img-opacity img {
-    transition: all .6s ease-in-out;
-    -webkit-transition: all .6s ease-in-out;
-    -moz-transition: all .6s ease-in-out;
-    -ms-transition: all .6s ease-in-out;
-    -o-transition: all .6s ease-in-out;
-  }
-
-  .img-opacity:hover img {
-    transition: all 1.2s ease-in-out;
-    -webkit-transition: all 1.2s ease-in-out;
-    -moz-transition: all 1.2s ease-in-out;
-    -ms-transition: all 1.2s ease-in-out;
-    -o-transition: all 1.2s ease-in-out;
-  }
-}
-
