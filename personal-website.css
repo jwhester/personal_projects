@@ -1,41 +1,36 @@
 @import url("https://fonts.googleapis.com/css?family=Nixie+One");
 @import url("https://fonts.googleapis.com/css?family=League+Script");
-/* line 26, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+/* line 27, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 28, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
-body {
-  background-image: url("../img/brickwall.png");
-  display: flex;
-  background-size: 100vw 100vh;
-}
-
 @media (max-width: 767px) {
-  /* line 38, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 36, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   body {
     margin: 10%;
     font-family: 'Nixie One', Helvetica, Arial, sans-serif;
     font-size: 20px;
+    background-image: url("../img/brickwall.png");
+    background-size: 100vw 100vh;
   }
-  /* line 43, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 45, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   a {
     color: white;
   }
-  /* line 46, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 48, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   h3 {
     color: white;
   }
-  /* line 49, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 51, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   p {
     color: white;
   }
-  /* line 53, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 55, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .theater-sign {
     display: none;
   }
-  /* line 56, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 58, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .container {
     display: flex;
     flex-direction: row;
@@ -44,24 +39,24 @@ body {
     align-items: center;
     user-select: none;
   }
-  /* line 64, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 66, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .sign {
     -ms-transform: rotate(-3deg);
     -webkit-transform: rotate(-3deg);
     transform: rotate(-3deg);
   }
-  /* line 70, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 72, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   #title {
     font-size: 50px;
   }
-  /* line 73, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 75, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   #name {
     -webkit-animation: blink 0.01s infinite alternate;
     -moz-animation: blink 0.01s infinite alternate;
     -o-animation: blink 0.01s infinite alternate;
     animation: blink 0.01s infinite alternate;
   }
-  /* line 79, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 81, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   #fade {
     opacity: 0.8;
     color: #ebffff;
@@ -71,20 +66,21 @@ body {
     -o-animation: fade 3s infinite alternate;
     animation: fade 3s infinite alternate;
   }
-  /* line 88, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 90, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .neon-blue {
+    font-family: 'Montserrat', sans-serif;
     margin: 0 auto;
     text-align: center;
     color: #ebffff;
-    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), 0 0px 15px #fff, 0 0 10px #38eeff, 0 0 50px #38eeff;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), 0 0px 15px #fff, 0 0 10px #ebffff, 0 0 50px #ebffff;
   }
-  /* line 94, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 97, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .neon-purple {
     font-family: 'League Script', Helvetica, Arial, sans-serif;
     font-size: 50px;
     margin: 0 auto;
     text-align: center;
-    color: #ccf;
+    color: #FF00E6;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5), 0 0 20px #fff, 0 0 10px #7d26cd, 0 0 50px #7d26cd;
   }
   @-moz-keyframes blink {
@@ -175,26 +171,26 @@ body {
       opacity: 0.8;
     }
   }
-  /* line 191, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 194, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .logo {
     width: 65%;
     margin-top: 20%;
     margin-bottom: 10%;
     user-select: none;
   }
-  /* line 198, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
-  .logo b {
+  /* line 201, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .logo p {
     font-family: 'Fredoka One', cursive;
     font-size: 30px;
-    color: #fee;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
-  }
-  /* line 204, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
-  .logo b span {
-    animation: blink linear infinite 8s;
+    color: #FF00E6;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #FF00E6, 0 0 0.5em #FF00E6, 0 0 0.1em #FF00E6, 0 10px 3px #000;
   }
   /* line 207, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
-  .logo b span:nth-of-type(2) {
+  .logo p span {
+    animation: blink linear infinite 8s;
+  }
+  /* line 210, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .logo p span:nth-of-type(2) {
     animation: blink linear infinite 9s;
   }
   @keyframes blink {
@@ -229,12 +225,12 @@ body {
       text-shadow: inherit;
     }
   }
-  /* line 248, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 251, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   img {
     width: 280px;
     height: 200px;
   }
-  /* line 252, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 255, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .timeline {
     line-height: 1.4em;
     list-style: none;
@@ -242,22 +238,22 @@ body {
     padding: 0;
     width: 100%;
   }
-  /* line 258, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 262, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .timeline h1, .timeline h2, .timeline h3, .timeline h4, .timeline h5, .timeline h6 {
     line-height: inherit;
   }
   /*----- TIMELINE ITEM -----*/
-  /* line 265, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 269, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .timeline-item {
     padding-left: 40px;
     position: relative;
   }
-  /* line 268, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 273, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .timeline-item:last-child {
     padding-bottom: 0;
   }
   /*----- TIMELINE INFO -----*/
-  /* line 275, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 280, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .timeline-info {
     font-size: 16px;
     font-weight: 700;
@@ -265,10 +261,12 @@ body {
     margin: 0 0 .5em 0;
     text-transform: uppercase;
     white-space: nowrap;
-    color: red;
+    font-family: 'Montserrat', sans-serif;
+    color: #00D6D6;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #00D6D6, 0 0 0.5em #00D6D6, 0 0 0.1em #00D6D6, 0 10px 3px #000;
   }
   /*----- TIMELINE MARKER -----*/
-  /* line 286, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 293, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .timeline-marker {
     animation: text-flicker 8s linear infinite;
     position: absolute;
@@ -277,9 +275,9 @@ body {
     left: 0;
     width: 15px;
   }
-  /* line 291, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 301, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .timeline-marker:before {
-    background: #FF6B6B;
+    background: yellow;
     border: 3px solid transparent;
     border-radius: 100%;
     content: "";
@@ -291,7 +289,7 @@ body {
     width: 15px;
     transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
   }
-  /* line 304, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 316, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .timeline-marker:after {
     content: "";
     width: 3px;
@@ -302,34 +300,34 @@ body {
     bottom: 0;
     left: 6px;
   }
-  /* line 312, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 327, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .timeline-item:last-child .timeline-marker:after {
     content: none;
   }
-  /* line 316, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 331, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .timeline-item:not(.period):hover .timeline-marker:before {
     background: transparent;
     border: 3px solid #FF6B6B;
   }
   /*----- TIMELINE CONTENT -----*/
-  /* line 323, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 338, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .timeline-content {
     padding-bottom: 40px;
   }
-  /* line 325, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 341, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .timeline-content p:last-child {
     margin-bottom: 0;
   }
   /*----- TIMELINE PERIOD -----*/
-  /* line 332, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 348, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .period {
     padding: 0;
   }
-  /* line 334, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 351, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .period .timeline-info {
     display: none;
   }
-  /* line 338, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 356, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .period .timeline-marker:before {
     background: transparent;
     content: "";
@@ -343,50 +341,141 @@ body {
     border-top: 3px solid #CCD5DB;
     border-bottom: 3px solid #CCD5DB;
   }
-  /* line 351, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 370, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .period .timeline-marker:after {
     content: "";
     height: 32px;
     top: auto;
   }
-  /* line 357, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 377, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .period .timeline-content {
     padding: 40px 0 70px;
   }
-  /* line 360, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 381, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .period .timeline-title {
     margin: 0;
   }
-  /* line 366, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 387, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   #skills img {
     height: 100px;
     width: 100px;
   }
-  /* line 373, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 391, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  #theatre {
+    border: inset black 10px;
+    height: 420px;
+    width: 100%;
+    margin-left: -20px;
+    text-align: center;
+    line-height: 120px;
+    font-size: 30px;
+    position: relative;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.3);
+    background-color: black;
+    text-shadow: 0 0 2px yellow, 0 0 4px black, 0 0 6px white;
+  }
+  /* line 406, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  #theatre #curtain-left, #theatre #curtain-right {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: -30px;
+    bottom: -30px;
+    width: 61%;
+    transition: all 4s ease-out;
+    transform: rotate(0deg);
+    background-color: #A90505;
+    background-image: linear-gradient(90deg, transparent 10%, rgba(255, 255, 255, 0.25) 50%, transparent 65%);
+    background-repeat: repeat;
+    box-shadow: 0 0 10px #555, inset 0 -60px 60px -30px rgba(255, 255, 255, 0.5), inset 0 90px 60px -30px rgba(0, 0, 0, 0.5);
+    background-size: 80px;
+  }
+  /* line 422, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  #curtain-left {
+    left: -10%;
+  }
+  /* line 426, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  #curtain-right {
+    right: -10%;
+  }
+  /* line 430, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  #theatre:hover #curtain-right, #theatre:hover #curtain-left {
+    width: 0;
+    background-size: 1px;
+    transition: all 4s ease;
+    transform: rotate(15deg);
+  }
+  /* line 437, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  div#theatre:hover #curtain-right {
+    transition: all 4s ease;
+    transform: rotate(-15deg);
+  }
+  /* line 442, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  #theatre p {
+    width: 50%;
+    margin: 0.5em auto;
+    position: relative;
+    z-index: 3;
+  }
+  /* line 449, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  #theatre p:first-of-type:before {
+    content: '';
+    position: absolute;
+    border-radius: 150px;
+    box-shadow: 0 0 10px 70px rgba(255, 255, 255, 0.4);
+    height: 0.1px;
+    width: 3px;
+    top: 6.5em;
+    left: 49%;
+    transform: rotate(25deg) skew(15deg, 5deg);
+  }
+  /* line 462, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .fa-arrow-left {
+    color: #00D6D6;
+    padding: 20px;
+    font-size: 30px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), 0 0px 15px #fff, 0 0 10px #ebffff, 0 0 50px #ebffff;
+    animation: blink linear infinite .8s;
+  }
+  /* line 469, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .fa-arrow-right {
+    color: #00D6D6;
+    padding: 20px;
+    font-size: 30px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), 0 0px 15px #fff, 0 0 10px #ebffff, 0 0 50px #ebffff;
+    animation: blink linear infinite .8s;
+  }
+  /* line 476, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   #resume {
     position: absolute;
-    margin-left: 20%;
+    margin-left: 15%;
+    cursor: pointer;
   }
-  /* line 378, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 482, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   #contactBtns {
     display: flex;
     width: 300px;
     justify-content: space-evenly;
+    cursor: pointer;
   }
-  /* line 384, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 488, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   #contact {
     display: flex;
     justify-content: space-around;
   }
-  /* line 391, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 492, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  #contact a {
+    color: #00D6D6;
+  }
+  /* line 495, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   a {
     text-decoration: none;
     color: #FF00E6;
     font-size: 45px;
     letter-spacing: 5px;
-    animation: text-flicker 10s linear infinite;
   }
-  /* line 399, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 503, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   #offset {
     animation: letter-flicker 2s linear infinite;
   }
@@ -481,32 +570,32 @@ body {
 }
 
 @media (min-width: 768px) {
-  /* line 505, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 610, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   #mobile {
     display: none;
   }
-  /* line 508, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 613, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   body {
     background-image: url("../img/brickwall.png");
-    display: flex;
     background-size: 100vw 100vh;
   }
-  /* line 514, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 619, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .theater-sign {
-    height: 300px;
-    margin-left: 25%;
+    height: auto;
+    width: auto;
+    margin: auto;
   }
-  /* line 519, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 625, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .sign-top {
     display: flex;
     justify-content: space-between;
   }
-  /* line 523, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 629, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .sign-lines {
     flex: 0 1 30%;
     margin-top: 10px;
   }
-  /* line 527, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 633, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .sign-line {
     background: white;
     border-radius: 3px;
@@ -514,7 +603,7 @@ body {
     height: 6px;
     margin-top: 16px;
   }
-  /* line 534, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 640, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .sign-title {
     color: #FFF4CD;
     flex: 0 1 40%;
@@ -530,7 +619,7 @@ body {
     -moz-animation: flicker 3s linear infinite;
     -webkit-animation: flicker 3s linear infinite;
   }
-  /* line 550, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 656, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .grid-container {
     border: 5px solid white;
     border-radius: 10px;
@@ -541,33 +630,28 @@ body {
     -moz-animation: flicker 3s linear infinite;
     -webkit-animation: flicker 3s linear infinite;
   }
-  /* line 561, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 667, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .grid {
     border: 2px solid #333;
     border-radius: 3px;
     display: flex;
     flex-flow: row wrap;
-    width: 700px;
+    width: auto;
   }
-  /* line 568, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 674, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .grid::after {
     box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.3) inset;
     content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     display: block;
   }
-  /* line 578, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 684, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .grid-cells {
     background: white;
     border: 1px solid #333;
     flex: 0 1 20%;
     height: 24px;
   }
-  /* line 584, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  /* line 690, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
   .show-details {
     color: #303030;
     font-family: 'Montserrat', sans-serif;
@@ -672,6 +756,64 @@ body {
     to {
       opacity: 1;
     }
+  }
+  /* line 798, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .poster {
+    height: 700px;
+    width: 600px;
+  }
+  /* line 802, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .about {
+    margin-top: 10%;
+    margin-left: 13%;
+  }
+  /* line 809, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .exp {
+    margin-top: 10%;
+    margin-left: 13%;
+  }
+  /* line 817, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .skill {
+    margin-top: 10%;
+    margin-left: 13%;
+  }
+  /* line 824, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .contact {
+    margin-top: 10%;
+    margin-left: 13%;
+  }
+  /*** effect - image opacity ***/
+  /* line 834, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .img-opacity .img-1 {
+    opacity: 1;
+  }
+  /* line 837, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .img-opacity .img-2 {
+    opacity: 0;
+  }
+  /* line 840, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .img-opacity:hover .img-1 {
+    opacity: 0;
+  }
+  /* line 843, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .img-opacity:hover .img-2 {
+    opacity: 1;
+  }
+  /* line 847, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .img-opacity img {
+    transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+  }
+  /* line 855, ../../../../../../../../../../../../../Users/jwhester/IdeaProjects/personal_projects/css/personal-website.scss */
+  .img-opacity:hover img {
+    transition: all 1.2s ease-in-out;
+    -webkit-transition: all 1.2s ease-in-out;
+    -moz-transition: all 1.2s ease-in-out;
+    -ms-transition: all 1.2s ease-in-out;
+    -o-transition: all 1.2s ease-in-out;
   }
 }
 
